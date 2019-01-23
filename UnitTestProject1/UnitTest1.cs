@@ -22,6 +22,7 @@ namespace UnitTestProject1
             // assert  
             double actual = account.Balance;
             Assert.AreEqual(expected, actual, 0.001, "Account not debited correctly");
+           // Assert.AreEqual(expected, actual, 0.001, "");
         }
 
         [TestMethod]
@@ -39,45 +40,12 @@ namespace UnitTestProject1
             // assert is handled by ExpectedException  
         }
 
-        [TestMethod]
-        public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
-        {
-            // arrange  
-            double beginningBalance = 11.99;
-            double debitAmount = 13;
-            BankAccount account = new BankAccount("Mr. Bryan Walton", beginningBalance);
 
-            // act  
-            try
-            {
-                account.Debit(debitAmount);
+        #region topics
+        // test case - customer name is empty
+        // remove ExpectedException and using try catch
+        // test fail after try catch
+        #endregion
 
-            }
-            catch (ArgumentOutOfRangeException ex)
-            {
-                // assert
-                StringAssert.Contains(ex.Message, "amount");
-                return;
-            }
-
-            Assert.Fail("Must thrwo Argument Out Of RangeException");
-        }
-
-
-        [TestMethod]
-        [ExpectedException(typeof(ArgumentNullException))]
-        public void Debit_WhenCustoemrNameNullOrEmpty_ShouldThrowArgumentNullExeption()
-        {
-            // arrange  
-            double beginningBalance = 11.99;
-            double debitAmount = 4.55;
-            BankAccount account = new BankAccount("", beginningBalance);
-
-            // act  
-            account.Debit(debitAmount);
-
-            // assert is handled by ExpectedException  
-
-        }
     }
 }
