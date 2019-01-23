@@ -1,0 +1,6 @@
+E:\haithamsha\Haitham\tuts\automationtest\utdemo\utdemo\bin\Debug\utdemo.exe.config
+E:\haithamsha\Haitham\tuts\automationtest\utdemo\utdemo\bin\Debug\utdemo.exe
+E:\haithamsha\Haitham\tuts\automationtest\utdemo\utdemo\bin\Debug\utdemo.pdb
+E:\haithamsha\Haitham\tuts\automationtest\utdemo\utdemo\obj\Debug\utdemo.exe
+E:\haithamsha\Haitham\tuts\automationtest\utdemo\utdemo\obj\Debug\utdemo.pdb
+E:\haithamsha\Haitham\tuts\automationtest\utdemo\utdemo\obj\Debug\utdemo.csprojResolveAssemblyReference.cache
